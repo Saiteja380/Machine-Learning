@@ -11,7 +11,7 @@ response.raise_for_status()
 
 model = pickle.loads(response.content)
 
-def predict_house_price(area, bedrooms, age):
+def Predict_House_Price(area, bedrooms, age):
     input_data = [[area, bedrooms, age]]
     predicted_price = model.predict(input_data)
     return predicted_price[0]
